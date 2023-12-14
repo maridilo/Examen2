@@ -6,7 +6,7 @@
 #include<cstdlib>
 #include<cstring>
 #include<cstdio>
-
+#include <stdexcept>
 
 using namespace std;
 
@@ -15,6 +15,7 @@ struct estudiante {
     int edad;
     float promedio;
 };
+
 struct Asistencia{
     string nombre;
     int asistencias;
@@ -101,5 +102,8 @@ int main() {
     eliminarEstudiante("Juan");
     return 0;
 }
+
+
+
 
 
