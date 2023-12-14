@@ -20,7 +20,9 @@ struct Asistencia{
     int asistencias;
     int faltas;
     int total;
+    int tardanzas;
 };
+
 void mostrar (estudiante estudiante) {
     cout << "Nombre: " << estudiante.nombre << endl;
     cout << "Edad: " << estudiante.edad << endl;
@@ -61,7 +63,27 @@ void eliminarEstudiante (string nombre) {
     remove("estudiantes.txt");
     rename("temporal.txt", "estudiantes.txt");
 }
-
+void mostrarAsistencia (Asistencia asistencia) {
+    cout << "Nombre: " << asistencia.nombre << endl;
+    cout << "Asistencias: " << asistencia.asistencias << endl;
+    cout << "Faltas: " << asistencia.faltas << endl;
+    cout << "Tardanzas: " << asistencia.tardanzas << endl;
+    cout << "Total: " << asistencia.total << endl;
+}
+void registrarAsistencia (Asistencia asistencia) {
+    ofstream archivo;
+    archivo.open("asistencia.txt", ios::app);
+    if (archivo.fail()) {
+        cout << "No se pudo abrir el archivo." << endl;
+        exit(1);
+    }
+    archivo << asistencia.nombre << endl;
+    archivo << asistencia.asistencias << endl;
+    archivo << asistencia.faltas << endl;
+    archivo << asistencia.tardanzas << endl;
+    archivo << asistencia.total << endl;
+    archivo.close();
+}
 
 int main() {
     estudiante estudiante1;
