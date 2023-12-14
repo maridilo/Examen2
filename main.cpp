@@ -38,6 +38,14 @@ void mostrarAsistencia(struct Asistencia asistencia){
     printf("Fecha: %s\nMateria: %d\nEstado: %.2f\n",
            asistencia.fecha, asistencia.materia, asistencia.estado);
 }
+void registrarAsistencia(struct Asistencia *asistencia){
+    printf("Fecha: ");
+    scanf("%s", asistencia->fecha);
+    printf("Materia: ");
+    scanf("%d", &asistencia->materia);
+    printf("Estado: ");
+    scanf("%f", &asistencia->estado);
+}
 
 int main() {
     // Declaracion de variables
