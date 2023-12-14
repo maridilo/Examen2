@@ -20,6 +20,11 @@ void mostrar (estudiante estudiante) {
     cout << "Edad: " << estudiante.edad << endl;
     cout << "Promedio: " << estudiante.promedio << endl;
 }
+void mostrar (vector<estudiante> estudiantes) {
+    for (int i = 0; i < estudiantes.size(); i++) {
+        mostrar(estudiantes[i]);
+    }
+}
 
 
 
