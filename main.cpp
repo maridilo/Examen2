@@ -15,6 +15,8 @@ struct Asistencia{
     char fecha[50];
     int materia;
     float estado;
+    int faltas;
+    int retardos;
 };
 void mostrarEstudiante(struct Estudiante estudiante){
     printf("Nombre: %s\nEdad: %d\nPromedio: %.2f\n",
