@@ -4,30 +4,18 @@
 
 using namespace std;
 
-class Asistencia{
-    private:
-        int id;
-        char nombre[50];
-        int edad;
-        char sexo[10];
-        char carrera[50];
-        int ciclo;
-        float promedio;
 
-    public:
-        Asistencia();
-        Asistencia(int id, char nombre[50], int edad, char sexo[10], char carrera[50], int ciclo, float promedio);
-        void mostrarDatos();
-        void guardarDatos();
-        void eliminarDatos();
-};
 
 struct Estudiante{
     char nombre[50];
     int edad;
     float promedio;
 };
-
+struct Asistencia{
+    char fecha[50];
+    int materia;
+    float estado;
+};
 void mostrarEstudiante(struct Estudiante estudiante){
     printf("Nombre: %s\nEdad: %d\nPromedio: %.2f\n",
            estudiante.nombre, estudiante.edad, estudiante.promedio);
@@ -44,6 +32,11 @@ void eliminarEstudiante(struct Estudiante *estudiante){
     strcpy(estudiante->nombre, "");
     estudiante->edad = 0;
     estudiante->promedio = 0.0;
+}
+
+void mostrarAsistencia(struct Asistencia asistencia){
+    printf("Fecha: %s\nMateria: %d\nEstado: %.2f\n",
+           asistencia.fecha, asistencia.materia, asistencia.estado);
 }
 
 int main() {
