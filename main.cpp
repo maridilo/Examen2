@@ -4,6 +4,24 @@
 
 using namespace std;
 
+class Asistencia{
+    private:
+        int id;
+        char nombre[50];
+        int edad;
+        char sexo[10];
+        char carrera[50];
+        int ciclo;
+        float promedio;
+
+    public:
+        Asistencia();
+        Asistencia(int id, char nombre[50], int edad, char sexo[10], char carrera[50], int ciclo, float promedio);
+        void mostrarDatos();
+        void guardarDatos();
+        void eliminarDatos();
+};
+
 struct Estudiante{
     char nombre[50];
     int edad;
