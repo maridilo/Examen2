@@ -1,3 +1,0 @@
-C:/Users/ACER/CLionProjects/untitled2/Examen2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ldlzqg/CMakeFiles/cmTC_a9fe6.dir
-C:/Users/ACER/CLionProjects/untitled2/Examen2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ldlzqg/CMakeFiles/edit_cache.dir
-C:/Users/ACER/CLionProjects/untitled2/Examen2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ldlzqg/CMakeFiles/rebuild_cache.dir
